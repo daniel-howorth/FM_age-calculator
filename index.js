@@ -32,8 +32,6 @@ const submitHandler = () => {
   switch (true) {
     case validatePopulated():
       break;
-    case validateType():
-      break;
     case validateRange():
       break;
     case validateDayInMonth():
