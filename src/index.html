@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="form-container">
+        <div class="form-input input-day-container">
+          <label for="input-day" id="input-day-label">Day</label>
+          <input type="text" name="day" id="input-day" placeholder="DD" />
+          <span class="validation-error day-error"></span>
+        </div>
+        <div class="form-input input-month-container">
+          <label for="input-month">Month</label>
+          <input type="text" name="month" id="input-month" placeholder="MM" />
+          <span class="validation-error month-error"></span>
+        </div>
+        <div class="form-input input-year-container">
+          <label for="input-year">Year</label>
+          <input type="text" name="year" id="input-year" placeholder="YYYY" />
+          <span class="validation-error year-error"></span>
+        </div>
+      </div>
+      <div class="submit-container">
+        <div class="graphic-line"></div>
+        <button class="submit-button">
+          <img src="../assets/images/icon-arrow.svg" alt="arrow" />
+        </button>
+      </div>
+      <div class="age-container">
+        <div class="years-container">
+          <p><span id="years">- -</span> years</p>
+        </div>
+        <div class="months-container">
+          <p><span id="months">- -</span> months</p>
+        </div>
+        <div class="days-container">
+          <p><span id="days">- -</span> days</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
